@@ -28,10 +28,6 @@ public static void main(String[] args){
                     ch2 = sc.nextInt();
                     Hotel.features(ch2);
                 break;
-//            case 2:System.out.println("\nChoose room type :\n1.Luxury Double Room \n2.Deluxe Double Room \n3.Luxury Single Room\n4.Deluxe Single Room\n");
-//                     ch2 = sc.nextInt();
-//                     Hotel.availability(ch2);
-//               break;
             case 2:System.out.println("\nChoose room type :\n1.Luxury Double Room \n2.Deluxe Double Room \n3.Luxury Single Room\n4.Deluxe Single Room\n");
                      ch2 = sc.nextInt();
                      Hotel.bookroom(ch2);                     
