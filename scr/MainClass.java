@@ -3,7 +3,7 @@ import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 import java.util.Scanner;
 
-public class Mainclass {
+public class MainClass {
 public static void main(String[] args){
         
         try
@@ -20,9 +20,18 @@ public static void main(String[] args){
         char wish;
         x:
         do{
-
+            
+        System.out.println("-----------------------------------------------------------------------------------------");
+        System.out.println("|     |  -----  -------  ------- |      	   ----- -----		 	");
+        System.out.println("|     |  |    |    |     |       |      	  |	|     |	 |-	   |	");
+        System.out.println("|     |  |    |    |     |       |      	  |	|     |	 |  -	   |	");
+        System.out.println("|-----|  |    |    |     ------- |      ===== |	|     |	 |   -     |	");
+        System.out.println("|     |  |    |    |     |       |      	  |	      |	 |    -    |	");
+        System.out.println("|     |  |    |    |     |       |      	  |	      |	 |     -   |	");
+        System.out.println("|     |   ----     |     ------- -------	  |	      |	 |	-  |	");
+        System.out.println("-----------------------------------------------------------------------------------------");
         System.out.println("\nEnter your choice :\n1.Display room details\n2.Book\n3.Order food\n4.Checkout\n5.Exit\n");
-        ch = sc.nextInt();
+                ch = sc.nextInt();
         switch(ch){
             case 1: System.out.println("\nChoose room type :\n1.Luxury Double Room \n2.Deluxe Double Room \n3.Luxury Single Room \n4.Deluxe Single Room\n");
                     ch2 = sc.nextInt();
