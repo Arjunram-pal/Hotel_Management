@@ -29,120 +29,125 @@ public class Hotel
         }      
         
           switch (i) {
-            case 1:ob.arr1[rn]=new Doubleroom(name,contact,gender,name2,contact2,gender2);
-                break;
-            case 2:ob.arr2[rn]=new Doubleroom(name,contact,gender,name2,contact2,gender2);
-                break;
-            case 3:ob.arr3[rn]=new Singleroom(name,contact,gender);
-                break;
-            case 4:ob.arr4[rn]=new Singleroom(name,contact,gender);
-                break;
-            default:System.out.println("Wrong option");
-                break;
-        }
-    }
-    
-    static void bookroom(int i)
-    {
-        int j;
-        int rn;
-        System.out.println("\nChoose room number from : ");
-        switch (i) {
             case 1:
-                for(j=0;j<ob.arr1.length;j++)
-                {
-                    if(ob.arr1[j]==null)
-                    {
-                        System.out.print(j+1+",");
-                    }
-                }
-                System.out.print("\nEnter room number: ");
-                try{
-                rn=sc.nextInt();
-                rn--;
-                if(ob.arr1[rn]!=null)
-                    throw new NotAvailable();
-                CustDetails(i,rn);
-                }
-                catch(Exception e)
-                {
-                    System.out.println("Invalid Option");
-                    return;
-                }
+                ob.arr1[rn]=new Doubleroom(name,contact,gender,name2,contact2,gender2);
                 break;
             case 2:
-                 for(j=0;j<ob.arr2.length;j++)
-                {
-                    if(ob.arr2[j]==null)
-                    {
-                        System.out.print(j+11+",");
-                    }
-                }
-                System.out.print("\nEnter room number: ");
-                try{
-                rn=sc.nextInt();
-                rn=rn-11;
-                if(ob.arr2[rn]!=null)
-                    throw new NotAvailable();
-                CustDetails(i,rn);
-                }
-                catch(Exception e)
-                {
-                    System.out.println("Invalid Option");
-                    return;
-                }
+                ob.arr2[rn]=new Doubleroom(name,contact,gender,name2,contact2,gender2);
                 break;
             case 3:
-                  for(j=0;j<ob.arr3.length;j++)
-                {
-                    if(ob.arr3[j]==null)
-                    {
-                        System.out.print(j+31+",");
-                    }
-                }
-                System.out.print("\nEnter room number: ");
-                try{
-                rn=sc.nextInt();
-                rn=rn-31;
-                if(ob.arr3[rn]!=null)
-                    throw new NotAvailable();
-                CustDetails(i,rn);
-                }
-                catch(Exception e)
-                {
-                    System.out.println("Invalid Option");
-                    return;
-                }
+                ob.arr3[rn]=new Singleroom(name,contact,gender);
                 break;
             case 4:
-                  for(j=0;j<ob.arr4.length;j++)
-                {
-                    if(ob.arr4[j]==null)
-                    {
-                        System.out.print(j+41+",");
-                    }
-                }
-                System.out.print("\nEnter room number: ");
-                try{
-                rn=sc.nextInt();
-                rn=rn-41;
-                if(ob.arr4[rn]!=null)
-                    throw new NotAvailable();
-                CustDetails(i,rn);
-                }
-                catch(Exception e)
-                {
-                   System.out.println("Invalid Option");
-                    return;
-                }
+                ob.arr4[rn]=new Singleroom(name,contact,gender);
                 break;
             default:
-                System.out.println("Enter valid option");
+                System.out.println("Wrong option");
                 break;
         }
-        System.out.println("Room Booked");
     }
     
+//    static void bookroom(int i)
+//    {
+//        int j;
+//        int rn;
+//        System.out.println("\nChoose room number from : ");
+//        switch (i) {
+//            case 1:
+//                for(j=0;j<ob.arr1.length;j++)
+//                {
+//                    if(ob.arr1[j]==null)
+//                    {
+//                        System.out.print(j+1+",");
+//                    }
+//                }
+//                System.out.print("\nEnter room number: ");
+//                try{
+//                rn=sc.nextInt();
+//                rn--;
+//                if(ob.arr1[rn]!=null)
+//                    throw new NotAvailable();
+//                CustDetails(i,rn);
+//                }
+//                catch(Exception e)
+//                {
+//                    System.out.println("Invalid Option");
+//                    return;
+//                }
+//                break;
+//            case 2:
+//                 for(j=0;j<ob.arr2.length;j++)
+//                {
+//                    if(ob.arr2[j]==null)
+//                    {
+//                        System.out.print(j+11+",");
+//                    }
+//                }
+//                System.out.print("\nEnter room number: ");
+//                try{
+//                rn=sc.nextInt();
+//                rn=rn-11;
+//                if(ob.arr2[rn]!=null)
+//                    throw new NotAvailable();
+//                CustDetails(i,rn);
+//                }
+//                catch(Exception e)
+//                {
+//                    System.out.println("Invalid Option");
+//                    return;
+//                }
+//                break;
+//            case 3:
+//                  for(j=0;j<ob.arr3.length;j++)
+//                {
+//                    if(ob.arr3[j]==null)
+//                    {
+//                        System.out.print(j+31+",");
+//                    }
+//                }
+//                System.out.print("\nEnter room number: ");
+//                try{
+//                rn=sc.nextInt();
+//                rn=rn-31;
+//                if(ob.arr3[rn]!=null)
+//                    throw new NotAvailable();
+//                CustDetails(i,rn);
+//                }
+//                catch(Exception e)
+//                {
+//                    System.out.println("Invalid Option");
+//                    return;
+//                }
+//                break;
+//            case 4:
+//                  for(j=0;j<ob.arr4.length;j++)
+//                {
+//                    if(ob.arr4[j]==null)
+//                    {
+//                        System.out.print(j+41+",");
+//                    }
+//                }
+//                System.out.print("\nEnter room number: ");
+//                try{
+//                rn=sc.nextInt();
+//                rn=rn-41;
+//                if(ob.arr4[rn]!=null)
+//                    throw new NotAvailable();
+//                CustDetails(i,rn);
+//                }
+//                catch(Exception e)
+//                {
+//                   System.out.println("Invalid Option");
+//                    return;
+//                }
+//                break;
+//            default:
+//                System.out.println("Enter valid option");
+//                break;
+//        }
+//        System.out.println("Room Booked");
+//    }
+//    
     static void features(int i)
     {
         switch (i) {
@@ -165,20 +170,20 @@ public class Hotel
     {
         double amount=0;
         String list[]={"Sandwich","Pasta","Noodles","Coke"};
-        System.out.println("\n*******");
+        System.out.println("\n#########");
         System.out.println(" Bill:-");
-        System.out.println("*******");
+        System.out.println("##########");
                
         switch(rtype)
         {
             case 1:
                 amount+=4000;
                     System.out.println("\nRoom Charge - "+4000);
-                    System.out.println("\n===============");
+                    System.out.println("\n###############");
                     System.out.println("Food Charges:- ");
-                    System.out.println("===============");
+                    System.out.println("################");
                      System.out.println("Item   Quantity    Price");
-                    System.out.println("-------------------------");
+                    System.out.println("--------#----------");
                     for(Food obb:ob.arr1[rn].food)
                     {
                         amount+=obb.price;
@@ -190,9 +195,9 @@ public class Hotel
             case 2:amount+=3000;
                     System.out.println("Room Charge - "+3000);
                     System.out.println("\nFood Charges:- ");
-                    System.out.println("===============");
+                    System.out.println("########################");
                      System.out.println("Item   Quantity    Price");
-                    System.out.println("-------------------------");
+                    System.out.println("#########################");
                     for(Food obb:ob.arr2[rn].food)
                     {
                         amount+=obb.price;
@@ -203,9 +208,9 @@ public class Hotel
             case 3:amount+=2200;
                     System.out.println("Room Charge - "+2200);
                     System.out.println("\nFood Charges:- ");
-                    System.out.println("===============");
+                    System.out.println("#####################");
                     System.out.println("Item   Quantity    Price");
-                    System.out.println("-------------------------");
+                    System.out.println("######################");
                     for(Food obb:ob.arr3[rn].food)
                     {
                         amount+=obb.price;
@@ -216,9 +221,9 @@ public class Hotel
             case 4:amount+=1200;
                     System.out.println("Room Charge - "+1200);
                     System.out.println("\nFood Charges:- ");
-                    System.out.println("===============");
+                    System.out.println("######################");
                     System.out.println("Item   Quantity    Price");
-                    System.out.println("-------------------------");
+                    System.out.println("######################");
                     for(Food obb:ob.arr4[rn].food)
                     {
                         amount+=obb.price;
@@ -319,7 +324,7 @@ public class Hotel
         int i,q;
         char wish;
          try{
-             System.out.println("\n==========\n   Menu:  \n==========\n\n1.Sandwich\tRs.50\n2.Pasta\t\tRs.60\n3.Noodles\tRs.70\n4.Coke\t\tRs.30\n");
+             System.out.println("\n#############\n   Menu:  \n###########\n\n1.Sandwich\tRs.50\n2.Pasta\t\tRs.60\n3.Noodles\tRs.70\n4.Coke\t\tRs.30\n");
         do
         {
             i = sc.nextInt();
